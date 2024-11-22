@@ -6,20 +6,20 @@ function App() {
     const [selectedCategory, setSelectedCategory] = useState("");
     const [joke, setJoke] = useState("");
 
+    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/jokes/categories");
-                console.log("Fetched categories:", response.data);
+                const response = await axios.get(`${API_URL}/jokes/categories`);
                 setCategories(response.data);
             } catch (error) {
-                console.error("Error fetching categories:", error.response?.data || error.message);
-                alert("Failed to fetch categories. Please try again.");
+                console.error("Error fetching categories:", error);
             }
         };
 
         fetchCategories();
-    }, []);
+    }, [API_URL]);
 
     const fetchJoke = async () => {
         if (!selectedCategory) {
@@ -28,7 +28,7 @@ function App() {
         }
 
         try {
-            const response = await axios.get(`http://localhost:5000/api/jokes/category/${selectedCategory}`);
+            const response = await axios.get(`${API_URL}/jokes/category/${selectedCategory}`);
             console.log("Fetched joke:", response.data);
             setJoke(response.data.joke || "No joke found!");
         } catch (error) {

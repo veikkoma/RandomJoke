@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\RandomJoke\\backend\\RandomJoke.csproj": {}
+    "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\backup\\RandomJoke\\backend\\RandomJoke.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\RandomJoke\\backend\\RandomJoke.csproj": {
+    "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\backup\\RandomJoke\\backend\\RandomJoke.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\RandomJoke\\backend\\RandomJoke.csproj",
+        "projectUniqueName": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\backup\\RandomJoke\\backend\\RandomJoke.csproj",
         "projectName": "RandomJoke",
-        "projectPath": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\RandomJoke\\backend\\RandomJoke.csproj",
+        "projectPath": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\backup\\RandomJoke\\backend\\RandomJoke.csproj",
         "packagesPath": "C:\\Users\\Käyttäjä\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\RandomJoke\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Käyttäjä\\gitstuff\\c-projects\\backup\\RandomJoke\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Käyttäjä\\AppData\\Roaming\\NuGet\\NuGet.Config"
