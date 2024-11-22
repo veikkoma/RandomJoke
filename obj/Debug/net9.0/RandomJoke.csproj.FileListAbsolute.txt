@@ -1,0 +1,7 @@
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.csproj.AssemblyReference.cache
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.AssemblyInfoInputs.cache
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.AssemblyInfo.cs
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.csproj.CoreCompileInputs.cache
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Käyttäjä\gitstuff\c-projects\RandomJoke\obj\Debug\net9.0\RandomJoke.MvcApplicationPartsAssemblyInfo.cache
