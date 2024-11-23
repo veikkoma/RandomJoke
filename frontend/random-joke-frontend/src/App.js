@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
     const [categories, setCategories] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("");
     const [joke, setJoke] = useState("");
 
-    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+    const API_URL = "http://localhost:5000/api";
 
     useEffect(() => {
         const fetchCategories = async () => {
@@ -19,7 +20,7 @@ function App() {
         };
 
         fetchCategories();
-    }, [API_URL]);
+    }, []);
 
     const fetchJoke = async () => {
         if (!selectedCategory) {
@@ -29,7 +30,6 @@ function App() {
 
         try {
             const response = await axios.get(`${API_URL}/jokes/category/${selectedCategory}`);
-            console.log("Fetched joke:", response.data);
             setJoke(response.data.joke || "No joke found!");
         } catch (error) {
             console.error("Error fetching joke:", error.response?.data || error.message);
@@ -38,13 +38,13 @@ function App() {
     };
 
     return (
-        <div style={{ textAlign: "center", padding: "20px", fontFamily: "Arial, sans-serif" }}>
-            <h1 style={{ color: "green" }}>Chuck Norris Jokes</h1>
-            <div>
+        <div className="app-container">
+            <h1 className="title">Dog Joke Teller</h1>
+            <div className="category-select">
                 <select
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
-                    style={{ padding: "10px", marginRight: "10px", borderRadius: "5px" }}
+                    className="dropdown"
                 >
                     <option value="">-- Select Category --</option>
                     {categories.map((category) => (
@@ -53,25 +53,18 @@ function App() {
                         </option>
                     ))}
                 </select>
-                <button
-                    onClick={fetchJoke}
-                    style={{
-                        padding: "10px",
-                        backgroundColor: "green",
-                        color: "white",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                        border: "none",
-                    }}
-                >
+                <button onClick={fetchJoke} className="fetch-joke-button">
                     Get Joke
                 </button>
             </div>
-            {joke && (
-                <p style={{ marginTop: "20px", fontSize: "18px", color: "gray" }}>
-                    {joke}
-                </p>
-            )}
+            <div className="joke-display">
+                <img src="/dog.png" alt="Dog" className="dog-image" />
+                {joke && (
+                    <div className="speech-bubble">
+                        <p>{joke}</p>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

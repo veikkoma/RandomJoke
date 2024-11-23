@@ -1,25 +1,68 @@
-select {
-  font-size: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.app-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-button {
-  background-color: green;
+.title {
+  color: #4CAF50;
+  font-size: 2.5em;
+}
+
+.category-select {
+  margin: 20px 0;
+}
+
+.dropdown {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.fetch-joke-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  font-size: 1em;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: darkgreen;
+.joke-display {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
 }
 
-p {
-  font-size: 18px;
-  margin-top: 20px;
-  font-style: italic;
+.dog-image {
+  width: 300px; 
+  height: auto; 
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -10px;
+  left: 350px; 
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  color: #333;
+  max-width: 600px; 
+  min-width: 400px; 
+  line-height: 1.6; 
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px; 
+  border-width: 15px; 
+  border-style: solid;
+  border-color: #f0f0f0 transparent transparent transparent;
 }
